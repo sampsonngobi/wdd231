@@ -1,11 +1,16 @@
 const hamBurgerButton = document.querySelector("#menu");
 const navigation = document.querySelector(".list");
 
-if(hamBurgerButton && navigation){
-    hamBurgerButton.addEventListener('click', ()=>{
+if (hamBurgerButton && navigation) {
+    console.log("Hamburger button:", hamBurgerButton);
+    console.log("Navigation list:", navigation);
+
+    hamBurgerButton.addEventListener('click', () => {
         navigation.classList.toggle("open");
         hamBurgerButton.classList.toggle("open");
     });
+} else {
+    console.error("Elements not found");
 }
 
 
