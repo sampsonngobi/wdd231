@@ -3,11 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "This page is a home page for Sampson Chinedu Ngobi in the BYU WDD231 course">
+    <meta name="author" content="Sampson Ngobi">
     <title>Home page</title>
+
+    <!-- style sheets -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/homepage.css">
+
+     <!-- external JS file -->
+      <script src="scripts/homepage.js" defer></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <script src="scripts/homepage.js"></script>
 </head>
 <body>
-    <h1>
-        Home Page
-    </h1>
+    <header>
+        <div class="image-text-container">
+            <!-- header image -->
+            <img class="profile-image" src="images/Profile pic.webp" alt="image of Sampson">
+             <!-- header text -->
+            <h1 class="header-text">Sampson C. Ngobi</h1>
+        </div>
+         <!-- navigation -->
+         <button id="menu" aria-label="Toggle menu"></button>
+        <nav class="navigation">
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Github Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+       <div class="main-card1 card" >
+            <div class="card-title">
+                <h2 >Course Work</h2>
+            </div>
+            <div class="card1-link">
+                <li></li>
+                <li></li>   
+                <li></li>
+            </div>
+            
+       </div>
+
+       <div class="main-card2 card">
+            <div class="card-title">
+                <h2>Brasilia, Brazil</h2>
+            </div>
+            
+            <div class="figure">
+                <figure>
+                    <img class="brasilia-image" src="images/brasilia.webp" alt="image of Brasilia">
+                    <figcaption>Brasilia, Brazil</figcaption>
+                </figure>
+            </div>
+        </div> 
+
+       <div class="main-card3 card" >
+            <div class="card-title">
+                <h2>Web And Computer programming Certificate</h2>
+            </div>
+             <div class="small-btn-container">
+                 <input class="btn small" type="button" value="CSE">
+                 <input class="btn small" type="button" value="WDD">
+                 <input class="btn small" type="button" value="All">
+            </div>
+            
+            <div class="big-btn-container">
+                <input class="btn big" type="button" value="CSE 110">
+                <input class="btn big" type="button" value="WDD 130">
+                <input class="btn big" type="button" value="CSE 111">
+                <input class="btn big" type="button" value="CSE 210">
+                <input class="btn big" type="button" value="WDD 131">
+                <input class="btn big" type="button" value="WDD 231">
+            </div>
+       </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> | Sampson Ngobi | Brazil</p>
+        <p id="lastModified">Last Modified: <span id="modified-date"></span></p>
+    </footer>
 </body>
 </html>

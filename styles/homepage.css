@@ -1,0 +1,246 @@
+:root{
+    --primary-color: rgb(0, 0, 0);
+    --secondery-color:white;
+    --page-color: rgb(237, 227, 223);
+    --big-btn-color: rgb(85, 93, 80);
+
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 1rem;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+/* header
+............................................................... */
+
+header{
+    background-color: var(--primary-color);
+    color: var(--secondery-color);
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    position: relative; /* Ensure it stays on top */
+    z-index: 100; /* Keep header above other elements */
+    text-align: center;
+    
+}
+
+.image-text-container{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+}
+
+.profile-image{
+    width: 100px;
+    height: auto;
+    padding: 1rem;
+}
+
+
+#menu::before{
+    content: "☰";
+}
+
+#menu {
+    font-size: 3rem;
+    cursor: pointer; 
+    height:min-content;
+    
+}
+
+#menu.open::before{
+    content: "❌";
+}
+
+.navigation{
+    background-color: var(--page-color);
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /*list is hidden at page load */
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: var(--page-color);
+    width: 20%;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.list.open{
+    display: block;
+}
+
+.list li{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.list a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* body
+............................................................... */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.card{
+    display: block;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--page-color);
+    padding: 1rem;
+}
+
+.card-title{
+    background-color: var(--primary-color);
+    color: var(--secondery-color);
+    width: 100%;
+    padding: 2px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.card1-link{
+    margin: 1rem;
+}
+
+.brasilia-image{
+    width: 250px;
+    height: 300px;
+}
+
+.main-card2 .figure{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+.small-btn-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    border-bottom: solid 1px black;
+}
+
+.big-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+ .small{
+    background-color: var(--primary-color);
+    color: var(--secondery-color);
+    width: 100px;
+    height: 40px;
+    margin-bottom: 1rem;
+ }
+.big{
+    background-color: var(--big-btn-color);
+    color: var(--secondery-color);
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    font-size: 2rem;
+    font-weight: 5rem;
+    border: 2px solid var(--secondery-color);
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    color: var(--secondery-color);
+    
+}
+/* footer
+............................................................... */
+
+.footer{
+    background-color: var(--primary-color);
+    color: var(--secondery-color);
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* big screen.................................................... */
+
+@media(min-width: 640px){
+
+    body{
+        max-width: 90%;
+        margin: 0, auto;
+        padding: 0, 20px;
+    }
+   
+    #menu{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation{
+        width: 50%;
+    }
+    .list{
+        display: flex;
+        justify-content:space-evenly;
+        position: initial;
+      
+        border-radius: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        
+    }
+
+    .list a{
+        color: var(--secondery-color);
+        font-weight: bold;
+        font-size:large;
+    }
+
+    .small-btn-container{
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .small{
+        margin-right: 2rem;
+    }
+}
