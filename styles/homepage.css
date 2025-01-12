@@ -173,7 +173,7 @@ main{
     height: 40px;
     margin-bottom: 1rem;
     font-size: 2rem;
-    font-weight: 5rem;
+    font-weight:bold;
     border-radius: 10px;
  }
 
@@ -231,8 +231,8 @@ main{
 
     body{
         max-width: 90%;
-        margin: 0, auto;
-        padding: 0, 20px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
    
     #menu{
