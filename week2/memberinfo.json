@@ -1,0 +1,39 @@
+{
+  
+    "family_name": "Ngobi",
+    "move_in_date": "2025-9-23",
+    "number_of_people": 5,
+    "visited_by_bishop": true,
+    "family_members":[
+        {
+            "name": "Sampson",
+            "gender":"male",
+            "birth_date": "1988-1-13"
+        },
+
+        {
+            "name": "Victoria",
+            "gender":"female",
+            "birth_date": "1990-3-30"
+        },
+
+        {
+            "name": "Salvador",
+            "gender":"male",
+            "birth_date": "2016-3-12"
+        },
+
+        {
+            "name": "Lapaix",
+            "gender":"female",
+            "birth_date": "2017-7-6"
+        },
+
+        {
+            "name": "Pedro",
+            "gender":"male",
+            "birth_date": "2020-1-2"
+        }
+    ]
+
+}

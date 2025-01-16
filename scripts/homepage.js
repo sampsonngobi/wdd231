@@ -126,7 +126,7 @@ function displayCourses(courseToDisplay){
     container.innerHTML = ""; // Clear the container before adding new courses  
 
     const totalCredits = courseToDisplay.reduce((sum, course) => sum + course.credits, 0);
-    document.getElementById("credit").innerHTML = totalCredits;
+    document.getElementById("credit").innerHTML = totalCredits; 
 
     courseToDisplay.forEach(course => {
         const courseDiv = document.createElement("div");
