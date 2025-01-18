@@ -17,10 +17,10 @@
 
     <!-- style sheets -->
      <link rel="stylesheet" href="styles/normalize.css">
-     <link rel="stylesheet" href="styles/">
+     <link rel="stylesheet" href="styles/directory.css">
 
      <!-- external JS file -->
-      <script src="scripts/" defer></script>
+      <script src="scripts/directory.js" defer></script>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,14 +32,16 @@
 <body>
     <!-- header -->
      <header>
-        <div>
-            <img src="" alt="site logo">
-            <div>
-                <h1>Chambers Directory</h1>
+        <div class="header-container">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="header-title">
+                <h1>BRASILIA</h1>
                 <p>Chamber of commerce</p>
             </div>
         </div>
-        <div>
+        <button id="menu" aria-label="Toggle menu"></button>
+        <div class="nav-container">
+           
             <nav class="navigation">
                 <ul class="list">
                     <li><a href="#">Home</a></li>
@@ -50,22 +52,24 @@
             </nav>
         </div>
      </header>
+
      <main>
-        <H1>Welcome</H1>
+        <div class="cards" id="cards"></div>
      </main>
+
      <footer>
-        <div>
-            <h4>Brasilia Chamber Of Commerce</h4>
-            <p>address</p>
-            <p>website</p>
-            <p>00099888778</p>
+        <div class="footer-card top ">
+            <h5>Brasilia Chamber Of Commerce</h4>
+            <p>Qn 317 conjunto 2 Samambaia</p>
+            <p>bdfchamberofcomerce.com</p>
+            <p>6188948736</p>
         </div>
-        <div>
-            <img src="" alt="social media link">
-            <img src="" alt="social media link">
-            <img src="" alt="social media link">
+        <div class="footer-card midia"> 
+           <a class="media" href="#"><img src="images/9023675_instagram_logo_fill_icon.png" alt="instagram-logo-and link"></a>
+           <a class="media" href="#"><img src="images/11053969_x_logo_twitter_new_brand_icon.png" alt="X-logo-and link"></a>
+           <a class="media" href="#"><img src="images/linkedin.png" alt="linkedin link"></a>
         </div>
-        <div>
+        <div class="footer-card bottom">
             <p>WDD231 Class Project</p>
             <p>Sampson Chinedu Ngobi</p>
             <p>&copy; <span id="year"></span> Brasilia Chamber Of Commerce</p>
