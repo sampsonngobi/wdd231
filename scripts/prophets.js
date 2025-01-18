@@ -5,7 +5,7 @@ const cards = document.querySelector('#cards');
 async function getProphetData() {
     const response = await fetch(url)
     const data = await response.json()
-    // console.log(data.prophets);    
+     console.log(data.prophets);    
     displayProphet(data.prophets);
 }
 
@@ -19,7 +19,7 @@ const displayProphet = (prophets) =>{
 
         fullName.innerHTML = `${prophet.name} ${prophet.lastname}`;
         birthDate.innerHTML = `Date of birth: ${prophet.birthdate}`;
-        birthPlace.innerHTML = `Place of birth: ${prophets.birthplace}`;
+        birthPlace.innerHTML = `Place of birth: ${prophet.birthplace}`;
 
         potrait.setAttribute('src', prophet.imageurl)
         potrait.setAttribute('alt', prophet.name);
