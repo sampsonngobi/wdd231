@@ -1,0 +1,129 @@
+{
+   
+    "members":[
+        {   
+            "name":"Banco Do Brazil",
+            "address":"Lote 1 conj 6 samambaia niote",
+            "phoneNumber": "99058857737",
+            "website": "https://www.bb.com.br/site/pra-voce/contas/conta-corrente/?gad_source=1&gclid=CjwKCAiAnKi8BhB0EiwA58DA4ZvFt_h5npsO5YY2S38YUH818iNOCdcIDtP90Yc_eV8zt5LPgxiKGhoCRhUQAvD_BwE",
+            "email": "contato@bb.com.br",
+            "id": 1,
+            "image":"https://demonstrativos.apps.bb.com.br/appms/assets/img/logo-bb.png",
+            "membershipLevel":"Gold"
+
+        },
+        {   
+            "name":"Atacadao",
+            "address":"QN SjP conj 10 Taguachinga",
+            "phoneNumber": "8894884774",
+            "website": "https://www.atacadao.com.br/?gad_source=1&gclid=CjwKCAiAnKi8BhB0EiwA58DA4Wo5iHfx8w7xyG11QiM8Ykfoz6K_z6uCCLtRjHg6x5LEfBuQh0ZgeRoCjnYQAvD_BwE",
+            "email": "atacadoa@gmail.com.br",
+            "id": 2,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuhiISP1Db8A7nyun18110ezxIvca2__6uQ&s",
+            "membershipLevel":"Silver"
+
+        },
+        {   
+            "name":"Banco Do Brasilia",
+            "address":"Gr 67 conj 3 Sam Niote",
+            "phoneNumber": "88940393324",
+            "website": "https://novo.brb.com.br/",
+            "email": "brb@gmail.com.br",
+            "id": 3,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAA0gHYwz9Rin9bSZJ7fZtULAmvasRpYeTGg&s",
+            "membershipLevel":"Member"
+
+        },
+        {   
+            "name":"Simbas Resturant and Bar",
+            "address":"Asa Sul Comércio Local Sul 412 BL D LOJA 15",
+            "phoneNumber": "(61) 3346-7540",
+            "website": "https://m.facebook.com/simbazbrasil/?tsid=0.7529320894852438&source=result",
+            "email": "simbas@gmail.com.br",
+            "id": 4,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYNb75bRtNrGgJ_NKr5xleRGyNO7Q2fTNCcQ&s",
+            "membershipLevel":"Silver"
+
+        },
+
+        {   
+            "name":"Auto france",
+            "address":"Sof Sul Quadra 1 conjunto A Guara brasilia",
+            "phoneNumber": "(61) 3201-0202",
+            "website": "https://autofrance.com.br/",
+            "email": "autofrance@gmail.com.br",
+            "id": 5,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGXOv6zXooVH6rCpILW0hsDlNuWDUBMhUDFg&s",
+            "membershipLevel":"Gold"    
+        },
+
+        {   
+            "name":"NuageIT",
+            "address":" SCN Q 5 Brasìlia shopping - Asa Norte,",
+            "phoneNumber": "(11) 92000-1100",
+            "website": "https://nuageit.com.br/",
+            "email": "autofrance@gmail.com.br",
+            "id": 6,
+            "image":"https://media.licdn.com/dms/image/v2/C4D0BAQFRN8Zk1v0FbQ/company-logo_200_200/company-logo_200_200/0/1647431511293/nuageit_logo?e=2147483647&v=beta&t=S2Ue0x77ZE3bux0bhvbk4ovZyogQprpdjaOisoJGQrA",
+            "membershipLevel":"Silver"    
+        },
+
+        {   
+            "name":"Engwitsam",
+            "address":"Qn 317 Conj F Lote 1 Samambaia Sul",
+            "phoneNumber": "6199870614",
+            "website": "https://www.instagram.com/engwitsam/",
+            "email": "engwitsam@gmail.com",
+            "id": 7,
+            "image":"./images/engwitsam.png",
+            "membershipLevel":"Gold" 
+
+        },
+
+        {   
+            "name":"Vons Delight",
+            "address":"Qn 317 Conj F Lote 1 Samambaia Sul",
+            "phoneNumber": "61984194858",
+            "website": "https://www.instagram.com/vonsdelight/",
+            "email": "vonsdelight@gmail.com",
+            "id": 8,
+            "image":"./images/vonsdelight.png",
+            "membershipLevel":"Gold" 
+
+        },
+
+        {   
+            "name":"Casa Azul",
+            "address":"QN 315 Conjunto F Lotes 1/4.Samambaia",
+            "phoneNumber": "61 3359-2095",
+            "website": "https://www.casazulfelipeaugusto.org.br/",
+            "email": "atendimento@casazul.org.br",
+            "id": 9,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeBYYIiAaylxs792fBAlEuZBUSuqPA1jF1_A&s",
+            "membershipLevel":"Gold" 
+
+        },
+
+        {   
+            "name":"Castelo Forte",
+            "address":"Quadra 302 Conjunto 8 Lote 02 Samambaia",
+            "phoneNumber": "+55 (61) 3358-1011",
+            "website": "https://www.casteloforte.com.br/",
+            "email": "atendimento@castelorforte.org.br",
+            "id":10,
+            "image":"https://media.licdn.com/dms/image/v2/C560BAQGQfg5ycMXmQQ/company-logo_200_200/company-logo_200_200/0/1631333259402?e=2147483647&v=beta&t=O2gCm7gtoCL5opXJkUNiHXumtYpDLm_LHJ0uRUXnytI",
+            "membershipLevel":"Gold" 
+
+        }
+
+
+        
+
+
+
+    ]
+
+    
+    
+
+}

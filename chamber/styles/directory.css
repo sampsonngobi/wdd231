@@ -9,7 +9,7 @@ body{
     background-color: var(--third-color);
     color: var(--primary-color);
     font-family: "Roboto", sans-serif;
-    max-width: 320px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,8 +110,25 @@ main{
     width: 100%;
     text-align: center;
     margin-top: 2px;
-    height: 500px;   /* just for design */
-    background-color: black;/* just for design */
+}
+
+.hero{
+    max-width: 100%;
+}
+
+section{
+    background-color: var(--primary-color);
+    color: var(--secondery-color);
+    padding: 5px;
+    margin: 1rem 0;
+}
+
+section h2{
+    margin: 1rem 0 0 0;
+}
+
+section img{
+    margin-bottom: 1rem;
 }
 
 /* Footer design */
@@ -155,4 +172,135 @@ footer .bottom{
     margin-bottom: 1rem;
 }
 
+/* Grid and list views */
+
+.view-toggle{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.view-toggle button{
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondery-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.view-toggle button:hover{
+    background-color: var(--big-btn-color);
+    color: var(--primary-color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.view-toggle button.active{
+    background-color: var(--big-btn-color);
+    color: var(--primary-color);
+}
+
+#cards.list-view{
+    display: block;
+}
+
+#cards.list-view section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#cards.list-view img {
+   display: none;
+}
+
+
+#cards.list-grid section{
+    text-align: center;
+    color: var(--secondery-color);
+}
+
 /* bigger screen designs */
+
+@media(min-width: 768px){
+    body{
+        width: 90%;
+        margin: 0 auto;
+       
+    }
+
+    header{
+        padding: 2px;
+    }
+
+    .logo{
+        width: 250px;
+        height: auto;
+     }
+
+    .header-title{
+        font-size:1.5rem;
+    }
+    #menu{
+        display: none;
+    }
+
+    .list{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .list a:hover{
+        transform: scale(1.5);
+        text-shadow: var(--primary-color);
+    }
+
+    
+
+    .hero{
+        width: 100%;
+        height: 400px;
+    }
+
+    section img{
+        max-width: 320px;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1rem;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer h5{
+        margin: 0;
+    }
+
+    footer p {
+        font-size:medium
+    }
+
+    .media img{
+        width: 30px;
+        height: 30px;
+    }
+    .footer-card.midia{
+        width: 30%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+}
+
