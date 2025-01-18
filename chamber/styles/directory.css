@@ -63,9 +63,7 @@ header .header-container{
     background-color: var(--primary-color);
     color: var(--secondery-color);
     cursor: pointer;
-    position:absolute;
-    top: 13%;
-    left: 15%;
+   
 }
 
 #menu.open::before{
@@ -76,6 +74,10 @@ header .header-container{
     list-style: none;
     display: none;
     padding: 0;
+}
+
+.list.open{
+    display: block;
 }
 
 .list li{
@@ -99,9 +101,7 @@ header .header-container{
     color: black;
 }
 
-list.open{
-    display: block;
-}
+
 
 
 /* main design */
@@ -155,3 +155,4 @@ footer .bottom{
     margin-bottom: 1rem;
 }
 
+/* bigger screen designs */
