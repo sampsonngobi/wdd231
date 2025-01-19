@@ -131,6 +131,7 @@ section img{
     margin-bottom: 1rem;
 }
 
+
 /* Footer design */
 
 footer{
@@ -226,13 +227,16 @@ footer .bottom{
     color: var(--secondery-color);
 }
 
+.site{
+    color: var(--secondery-color);
+}
+
 /* bigger screen designs */
 
 @media(min-width: 768px){
     body{
         width: 90%;
         margin: 0 auto;
-       
     }
 
     header{
@@ -258,7 +262,7 @@ footer .bottom{
 
     .list a:hover{
         transform: scale(1.5);
-        text-shadow: var(--primary-color);
+    
     }
 
     

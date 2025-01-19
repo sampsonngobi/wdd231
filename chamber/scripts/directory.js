@@ -43,10 +43,11 @@ const displayMember = (members) =>{
         const membershipLevel = document.createElement('p');
         const logo = document.createElement('img');
 
+
         name.innerHTML = `${member.name}`;
         address.innerHTML = `${member.address}`;
         phone.innerHTML = `${member.phoneNumber}`
-        website.innerHTML = `<a href="${member.website}" target="_blank">Website</a>`;
+        website.innerHTML = `<a href="${member.website}" target="_blank" class="site">Website</a>`;
         email.innerHTML = `${member.email}`;
         membershipLevel.innerHTML = `${member.membershipLevel}`;
 
