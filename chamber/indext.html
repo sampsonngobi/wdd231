@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content ="This page is a Chambers directory page for Sampson Chinedu Ngobi in the BYU WDD231, which is part of the software developer course.">
+    <meta name="author" content="Sampson Chinedu Ngobi">
+    <title>Directory page Sampson Chinedu Ngobi </title>
+
+    <!-- open graph tags -->
+    <meta property="og:title" content="Directory page Sampson Chinedu Ngobi">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/logo.png">
+    <meta property="og:url" content="http://sampsonngobi.github.io/wdd231/Chamber/directory.html">
+    
+    
+
+    <!-- style sheets -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/directory.css">
+     <link rel="stylesheet" href="styles/home.css">
+
+     <!-- external JS file -->
+      <script src="scripts/home.js" defer></script>
+      <script src="scripts/footer.js" defer></script>
+      <script src="scripts/bamBurgerButton.js" defer></script>
+      <script src="scripts/weather.js" defer></script>
+
+
+    <!-- font -->
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- header -->
+     <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="header-title">
+                <h1>BRASILIA</h1>
+                <p>Chamber of commerce</p>
+            </div>
+            <button id="menu" aria-label="Toggle menu"></button>
+        </div>
+        
+        <div class="nav-container">
+           
+            <nav class="navigation">
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" target="_blank">Dirctory</a></li>
+                    <li><a href="#" target="_blank">Join</a></li>
+                    <li><a href="#" target="_blank">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+     </header>
+
+     <main>
+        <img class="hero" src="images/hero.webp" alt="image of Brasilia">
+        <button id="key-note" class="key-note"></button>
+        <h2>Home</h2>
+
+        <section>
+            <h2>Events</h2>
+        </section>
+        <section>
+            <img id="weather-icon" src="" alt="">
+            <div id="current-weather-info" class="current-weather-info"></div>
+            
+            <div id="forecast-weather-info" class="current-weather-info">
+                <P>today</P>
+                <p>wedsnesday</p>
+                <P>Thursday</P>
+            </div>
+        </section>
+
+        <section class="cards" id="cards"></section>
+     </main>
+
+     <footer>
+        <div class="footer-card top ">
+            <h5>Brasilia Chamber Of Commerce</h5>
+            <p>Qn 317 conjunto 2 Samambaia</p>
+            <p>bdfchamberofcomerce.com</p>
+            <p>6188948736</p>
+        </div>
+        <div class="footer-card midia"> 
+           <a class="media" href="#"><img src="images/9023675_instagram_logo_fill_icon.png" alt="instagram-logo-and link"></a>
+           <a class="media" href="#"><img src="images/11053969_x_logo_twitter_new_brand_icon.png" alt="X-logo-and link"></a>
+           <a class="media" href="#"><img src="images/linkedin.png" alt="linkedin link"></a>
+        </div>
+        <div class="footer-card bottom">
+            <p>WDD231 Class Project</p>
+            <p>Sampson Chinedu Ngobi</p>
+            <p>&copy; <span id="year"></span> Brasilia Chamber Of Commerce</p>
+            <p id="lastModified">Last Modified: <span id="modified-date"></span></p>
+        </div>
+     </footer>
+    
+</body>
+</html>
