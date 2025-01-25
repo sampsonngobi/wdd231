@@ -1,0 +1,26 @@
+
+body{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+span{
+    color: blue;
+    font-size: large;
+    margin-top: 2rem;
+}
