@@ -13,7 +13,19 @@ async function getMembers() {
 }
 
 const displayMember = (members) =>{
-    members.forEach((member) =>{
+
+     // Filter members with gold or silver membership
+     const filteredMembers = members.filter(
+        (member) => member.membershipLevel.toLowerCase() === "gold" || member.membershipLevel.toLowerCase() === "silver"
+    );
+
+    // Shuffle the filtered members
+    const shuffledMembers = filteredMembers.sort(() => Math.random() - 0.5);
+
+     // Restrict to the first 3 members
+    const limitedMembers = shuffledMembers.slice(0, 3);
+
+    limitedMembers.forEach((member) =>{
         const card = document.createElement('section');
         const name = document.createElement('h2');
         const address = document.createElement('p');
