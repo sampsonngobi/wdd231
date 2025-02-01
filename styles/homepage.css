@@ -175,6 +175,7 @@ main{
     font-size: 2rem;
     font-weight:bold;
     border-radius: 10px;
+    cursor: pointer;
  }
 
 
@@ -208,12 +209,31 @@ main{
 .course-card{
     width: 90%;
     text-align: center;
+    cursor: pointer;
 }
 
 .credit{
     font-size: 1.5rem;
     text-align: center;
 }
+
+#mydialog{
+    width: 80%;
+}
+#mydialog div{
+    display: grid;
+    grid-template-columns: auto 44px;
+}
+
+#mydialog button{
+    height: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}   
+
 /* footer
 ............................................................... */
 

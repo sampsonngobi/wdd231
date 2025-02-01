@@ -1,4 +1,5 @@
 
+import {mydialog , coursename, courseInfo, close, showInfo} from '../scripts/dailog.js'
 
 const hamBurgerButton = document.querySelector("#menu");
 const navigation = document.querySelector(".list");
@@ -146,11 +147,22 @@ function displayCourses(courseToDisplay){
             <h3>${course.subject}${course.number}</h3>`;
         }
 
+        courseDiv.addEventListener('click', () => showInfo(course))       
+
+
         container.appendChild(courseDiv)    
-        
+
+      
+
     });
 
 }
+
+// function showInfo(course){
+//     coursename.innerHTML = course.title
+//     courseInfo.innerHTML = `Course Code: ${course.subject}${course.number}\n Certificate ${course.certificate} \n ${course.description}\n Technology: ${course.technology}`
+//     mydialog.showModal()
+// }
 
 document.getElementById("btn-all").addEventListener("click", () =>{
     displayCourses(courses); //displays all courses
