@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is a Chambers Join page. It has a form for new potential members to join the chamber of commerce. it is part of Sampson Chinedu Ngobi's BYU WDD231 course, which is part of the software developer course.">
+    <meta name="author" content="Sampson Chinedu Ngobi">
+    <title>Chamber of Commerce Join page Sampson Chinedu Ngobi </title>
+
+    <!-- open graph tags -->
+    <meta property="og:title" content="Join page Sampson Chinedu Ngobi">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sampsonngobi.github.io/wdd231/images/logo.png">
+    <meta property="og:url" content="https://sampsonngobi.github.io/wdd231/chamber/join.html">
+    
+      
+
+    <!-- style sheets -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/join.css">
+
+     <!-- external JS file -->
+      <!-- <script src="scripts/home.js" defer></script> -->
+      <!-- <script src="scripts/footer.js" defer></script> -->
+      <!-- <script src="scripts/hamBurgerButton.js" defer></script> -->
+      <!-- <script src="scripts/weather.js" defer></script> -->
+      <script type="module" src="scripts/join.js" defer></script>
+
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<script>
+    function generateSubmitTime(event){
+        event.preventDefault()
+        const time = document.querySelector("#time-stamp")
+        let currentTime = new Date().toString()
+        time.value = currentTime
+        event.target.submit()
+    }
+</script>
+<body>
+    <!-- header -->
+     <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="header-title">
+                <h1>BRASILIA</h1>
+                <p>Chamber of commerce</p>
+            </div>
+            <button id="menu" aria-label="Toggle menu"></button>
+        </div>
+        
+        <div class="nav-container">
+           
+            <nav class="navigation">
+                <ul class="list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./directory.html" target="_blank">Dirctory</a></li>
+                    <li><a href="#" target="_blank">Join</a></li>
+                    <li><a href="#" target="_blank">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+     </header>
+
+     <main>
+        <h2 class="page-title">Join</h2>
+        <section class="main-cont">
+            <form action="thankyou.html" method="get" class="cf1" onsubmit="generateSubmitTime(event)">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="first-name">First Name* 
+                        <input 
+                        type="text" 
+                        name="first-name" 
+                        class="first-name" 
+                        autocomplete="on" 
+                        required>
+                    </label>
+                    <label for="last-name">Last Name* 
+                        <input 
+                        type="text" 
+                        name="last-name" 
+                        class="last-name" 
+                        autocomplete="on" 
+                        required>
+                    </label>
+                    <label for="org-title">organizational Title*
+                        <input 
+                        type="text" 
+                        name="org-title" 
+                        class="org-title" 
+                        autocomplete="organization-title"
+                        pattern="^[A-Za-z\- ]{7,}$" 
+                        required>
+                        
+                    </label>    
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="email">Email Address*<input 
+                        type="email"
+                        name="email"
+                        autocomplete ="on"
+                        placeholder="chamberofcommerce@gmail.com"
+                        required>
+                    </label>
+                    <label for="phone">Mobile Phone Number* 
+                        <input 
+                        type="telephone"
+                        name="phone"
+                        autocomplete ="on"
+                        required>
+                    </label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>organization Information</legend>
+                    <label for="org-name"> business/organization's name* 
+                        <input 
+                        type="text"
+                        name="org-name"
+                        autocomplete ="organization"
+                        required>
+                    </label>
+                    <h4>Membership Level</h4>
+                    <label for="MPMembership">  
+                        <input 
+                        type="radio"
+                        name="membership-level"
+                        value="NP Membership"
+                        >NP Membership
+                    </label>
+                    <label for="bronze">  
+                        <input 
+                        type="radio"
+                        name="membership-level"
+                        value="Bronnze"
+                        > Bronze
+                    </label>
+                    <label for="silver">  
+                        <input 
+                        type="radio"
+                        name="membership-level"
+                        value="Silver"
+                        > Silver
+                    </label>
+                    <label for="gold">  
+                        <input 
+                        type="radio"
+                        name="membership-level"
+                        value="Gold"
+                        > Gold
+                    </label>Business/organization's description
+                    <label for="org-description">  
+                    <textarea name="org-description" 
+                    rows="4" 
+                    cols="50" 
+                    placeholder="Tell us about your organization"                   
+                    ></textarea>
+                    </label>
+                    <input type="hidden" name="time-stamp" id="time-stamp">
+                    <input type="submit" value="Join" id="join">
+
+
+                </fieldset>
+            </form>
+
+            <section class="membership-info">
+                <h3>Membership Levels</h3>
+
+                <div class="gold-info">
+                    <h4>Gold Membership</h4>
+                    <button id="gold-info">Learn more</button>
+                </div>
+
+                <div class="silver-info">
+                    <h4>Silver Membership</h4>
+                    <button id="silver-info">Learn more</button>
+                </div>
+                <div class="bronze-info">
+                    <h4>Bronze Membership</h4>
+                    <button id="bronze-info">Learn more</button>
+                </div>
+                <div class="np-info">
+                    <h4>NP Membership</h4>
+                    <button id="np-info">Learn more</button>
+                </div>
+
+                <dialog id="dialog">
+                    <div class="dialog-top">
+                        <h2></h2> 
+                        <button id="close-dialog">X</button>
+                    </div>
+                
+                    <div id="dialog-text"></div> 
+                
+                </dialog>
+
+            </section>
+        </section>
+     </main>
+
+     <footer>
+        <div class="footer-card top ">
+            <h5>Brasilia Chamber Of Commerce</h5>
+            <p>Qn 317 conjunto 2 Samambaia</p>
+            <p>bdfchamberofcomerce.com</p>
+            <p>6188948736</p>
+        </div>
+        <div class="footer-card midia"> 
+           <a class="media" href="#"><img src="images/9023675_instagram_logo_fill_icon.png" alt="instagram-logo-and link"></a>
+           <a class="media" href="#"><img src="images/11053969_x_logo_twitter_new_brand_icon.png" alt="X-logo-and link"></a>
+           <a class="media" href="#"><img src="images/linkedin.png" alt="linkedin link"></a>
+        </div>
+        <div class="footer-card bottom">
+            <p>WDD231 Class Project</p>
+            <p>Sampson Chinedu Ngobi</p>
+            <p>&copy; <span id="year"></span> Brasilia Chamber Of Commerce</p>
+            <p id="lastModified">Last Modified: <span id="modified-date"></span></p>
+        </div>
+     </footer>
+    
+</body>
+</html>

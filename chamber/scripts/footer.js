@@ -1,11 +1,19 @@
+// Export the values so they can be used elsewhere
+export const currentYear = new Date().getFullYear();
+export const lastModifiedDate = document.lastModified;
 
-function updatefooter(){
-    const currentYear = new Date().getFullYear();
+export function updateFooter() {
+    const yearElement = document.querySelector("#year");
+    const lastModifiedElement = document.querySelector("#modified-date");
 
-    const year = document.querySelector('#year')
-    const lastModified = document.querySelector('#modified-date')
+    if (yearElement) {
+        yearElement.innerHTML = currentYear;
+    }
 
-    year.innerHTML = currentYear;
-    lastModified.innerHTML = document.lastModified;
+    if (lastModifiedElement) {
+        lastModifiedElement.innerHTML = lastModifiedDate;
+    }
 }
-updatefooter();
+
+// Call the function to update the footer
+updateFooter();
