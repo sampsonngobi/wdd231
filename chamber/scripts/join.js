@@ -75,6 +75,6 @@ btnNp.addEventListener('click', () =>{
 
 
 
-updateFooter()
+updateFooter();
 toggleMenu();
 // generateSubmitTime(Event)

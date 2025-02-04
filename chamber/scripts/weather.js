@@ -10,7 +10,7 @@ const lon = "-47.89961075389943";
 const url = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`
 const forecastUrl = `//api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}`
 
-async function apiFetch(){
+export async function apiFetch(){
     try {
         const response = await fetch(url);
         const forecastResponse = await fetch(forecastUrl)

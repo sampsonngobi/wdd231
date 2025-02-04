@@ -1,4 +1,6 @@
-
+import { currentYear, updateFooter } from "./footer.js";
+import { hamBurgerButton, navigation, toggleMenu } from './hamBurgerButton.js';
+import { apiFetch } from "./weather.js";
 
 // add data
 
@@ -64,3 +66,6 @@ const displayMember = (members) =>{
 
 
 getMembers();
+updateFooter();
+toggleMenu();
+apiFetch()

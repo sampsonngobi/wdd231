@@ -30,7 +30,8 @@ header{
 }
 
 header .header-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto 44px;
     width: 100%;
     justify-content:space-evenly;
     align-items: center;
@@ -57,12 +58,14 @@ header .header-container{
 
 #menu::before{
     content: "☰";
+    
 }
 
 #menu{
     background-color: var(--primary-color);
     color: var(--secondery-color);
     cursor: pointer;
+    border: none;
    
 }
 
@@ -257,6 +260,7 @@ footer .bottom{
 
     .list{
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
@@ -264,8 +268,6 @@ footer .bottom{
         transform: scale(1.5);
     
     }
-
-    
 
     .hero{
         width: 100%;

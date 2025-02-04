@@ -27,12 +27,14 @@ main h3{
     text-align: center;
 }
 .key-note{
-    width: 200px;
+    width: 100px;
     height: 50px;
     background-color: white;
     border: 3px solid black;
     border-radius: 4px;
-   
+    position: absolute;
+    right: 100px;
+    top: 400px;
 }
 
 .key-note:hover {
@@ -65,7 +67,8 @@ main h3{
     .key-note{
         
         position: absolute;
-        right: 70px;
+        right: 100px;
+        top: 500px;
     }
 
 }
