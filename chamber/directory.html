@@ -20,9 +20,8 @@
      <link rel="stylesheet" href="styles/directory.css">
 
      <!-- external JS file -->
-      <script src="scripts/directory.js" defer></script>
-      <script src="scripts/footer.js" defer></script>
-      <script src="scripts/bamBurgerButton.js" defer></script>
+      <script type="module" src="scripts/directory.js"></script>
+      
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,8 +39,9 @@
                 <h1>BRASILIA</h1>
                 <p>Chamber of commerce</p>
             </div>
+            <button id="menu" aria-label="Toggle menu"></button>
         </div>
-        <button id="menu" aria-label="Toggle menu"></button>
+        
         <div class="nav-container">
            
             <nav class="navigation">
@@ -56,7 +56,7 @@
      </header>
 
      <main>
-        <img class="hero" src="images/hero.webp" alt="image of Brasilia">
+        <img class="hero" src="images/hero.webp" alt="image of Brasilia" loading="lazy">
         <h2>DIRECTORY</h2>
 
         <div class="view-toggle">

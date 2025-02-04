@@ -1,5 +1,6 @@
 
-
+import { updateFooter } from "./footer.js";
+import { toggleMenu } from "./hamBurgerButton.js";
 // add data
 
 const path = './data/members.json';
@@ -64,3 +65,5 @@ listViewButton.addEventListener('click', () =>{
 });
 
 getMembers();
+toggleMenu()
+updateFooter()
