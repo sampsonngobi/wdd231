@@ -12,6 +12,8 @@ const dialogBox = document.querySelector("#dialog")
 const dailogContent = document.querySelector("#dialog-text")
 const dialogTitle = document.querySelector("#dialog h2")
 
+const joinButton = document.querySelector("#join")
+
 closeBtn.addEventListener('click', () => {
     dialogBox.close();
 });
@@ -72,9 +74,12 @@ btnNp.addEventListener('click', () =>{
     `
 })
 
+// joinButton.addEventListener("click", () =>{
+//     generateSubmitTime(event)
+// })
 
 
 
 updateFooter();
 toggleMenu();
-// generateSubmitTime(Event)
+// generateSubmitTime(event)

@@ -1,0 +1,107 @@
+:root{
+    --primary-color: #DB504A;
+    --secondary-color: #B2B09B;
+    --button-backgroun-color: #DB504A;
+    --button-color: black;
+    --font-color1:black;
+    --font-color2:white;
+}
+
+body{
+    background-color: white;
+    font-family: Roboto;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.header-cont{
+    display: grid;
+    grid-template-columns: auto auto 44px;
+    grid-gap: 1rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--font-color2);
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+#menu{
+    width: 30px;
+    height: 30px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--font-color1);
+    width: 100%;
+    padding: 1rem;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+@media (max-width: 400px) {
+    .list{
+        display: block;
+        text-align: center;
+    }
+}
+
+.primary-color{
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.sec-color{
+    color: var(--secondary-color);
+    background-color: black;
+}
+
+.btn-background{
+    color: var(--button-backgroun-color);
+    background-color: white;
+}
+
+.btn-color{
+    background-color: white;
+    color: var(--button-color);
+}
+
+.font-color1{
+    color: var(--font-color1);
+    background-color: black;
+}
+
+.font-color1{
+    color: var(--font-color2);
+}
+
+.weight1{
+    font-weight: 100;
+}
+.weight2{
+    font-weight: 400;
+}
+
+footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
