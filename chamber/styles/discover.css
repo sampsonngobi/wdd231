@@ -176,7 +176,9 @@ header .header-container{
     transform: scale(1.02);
 }
 
-
+main h1{
+    text-align: center;
+}
 
 /* Footer design */
 
