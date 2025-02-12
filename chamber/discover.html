@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is Chamber of commerce dicover page. It has information about the city where the chamber is. It is part of Sampson Chinedu Ngobi'sproject for the wdd231 course">
+    <meta name="author" content="Sampson Chinedu Ngobi">
+    <title>Chamber of Commerce Discover page Sampson Chinedu Ngobi </title>
+
+    <!-- open graph tags -->
+    <meta property="og:title" content="Discover page Sampson Chinedu Ngobi">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sampsonngobi.github.io/wdd231/images/logo.png">
+    <meta property="og:url" content="https://sampsonngobi.github.io/wdd231/chamber/discover.html">
+    
+      
+
+    <!-- style sheets -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/discover.css">
+
+     <!-- external JS file -->
+    
+      <script type="module" src="scripts/discover.js"></script>
+
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- header -->
+     <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="header-title">
+                <h1>BRASILIA</h1>
+                <p>Chamber of commerce</p>
+            </div>
+            <button id="menu" aria-label="Toggle menu"></button>
+        </div>
+        
+        <div class="nav-container">
+           
+            <nav class="navigation">
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" target="_blank">Dirctory</a></li>
+                    <li><a href="join.html" target="_blank">Join</a></li>
+                    <li><a href="discover.html" target="_blank">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+     </header>
+
+     <main>
+       <div id="places-card" class="places-card"></div>
+    
+       <div id="visit-message"></div>
+
+     </main>
+
+     <footer>
+        <div class="footer-card top ">
+            <h5>Brasilia Chamber Of Commerce</h5>
+            <p>Qn 317 conjunto 2 Samambaia</p>
+            <p>bdfchamberofcomerce.com</p>
+            <p>6188948736</p>
+        </div>
+        <div class="footer-card midia"> 
+           <a class="media" href="#"><img src="images/9023675_instagram_logo_fill_icon.png" alt="instagram-logo-and link"></a>
+           <a class="media" href="#"><img src="images/11053969_x_logo_twitter_new_brand_icon.png" alt="X-logo-and link"></a>
+           <a class="media" href="#"><img src="images/linkedin.png" alt="linkedin link"></a>
+        </div>
+        <div class="footer-card bottom">
+            <p>WDD231 Class Project</p>
+            <p>Sampson Chinedu Ngobi</p>
+            <p>&copy; <span id="year"></span> Brasilia Chamber Of Commerce</p>
+            <p id="lastModified">Last Modified: <span id="modified-date"></span></p>
+        </div>
+     </footer>
+    
+</body>
+</html>
