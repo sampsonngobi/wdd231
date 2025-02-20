@@ -1,0 +1,47 @@
+:root{
+    --primary-color: #DB504A;
+    --secondary-color: #B2B09B;
+    --button-backgroun-color: #DB504A;
+    --button-color: black;
+    --font-color1:black;
+    --font-color2:white;
+}
+
+.advert {
+    background-color:var(--secondary-color);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.advert a{
+   background-color: var(--button-backgroun-color); 
+   color: var(--font-color1);
+   text-decoration: none;
+   padding: 1rem;
+   border-radius: 4px;
+}
+.advert a:hover{
+    transform: scale(1.05);
+    background-color: var(--font-color1);
+    color: var(--font-color2);
+}
+
+
+@media (min-width: 614px){
+
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      
+    }
+    
+   
+
+   
+}
+
+

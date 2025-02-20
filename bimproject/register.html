@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content ="This page is the new store registeration page for my wdd231 final course project">
+    <meta name="author" content="Sampson Chinedu Ngobi">
+   
+
+    <!-- open graph tags -->
+    <meta property="og:title" content="Register page for the Brasilia Import Market website">
+    <meta property="og:description" content="This page is Register page for the Brasilia import market which is part of wdd231 final course project.">
+    <meta property="og:url" content="https://sampsonngobi.github.io/wdd231/bimproject/register.html"> 
+    <meta property="og:type" content="website">
+
+    <!-- style sheets -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/general-style.css">
+     <link rel="stylesheet" href="styles/register.css">
+    
+
+    <script type="module" src="scripts/register.js"></script>
+     
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico"> 
+
+
+    <title>Register page for the Brasilia Import Market website</title>
+</head>
+<body>
+    <header>
+        <div class="header-cont">
+            <img src="images/logo.png" alt="BIM logo " class="logo"> 
+            <h1>BRASILIA IMPORT MARKET</h1>
+            <button id="menu" aria-label="Toggle menu"></button>
+        </div>
+        <div>
+            <nav class="navigation">
+                <ul class="list">
+                    <ul class="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                        <li><a href="register.html" target="_blank">Register</a></li>
+                        <li><a href="about.html" target="_blank">About</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="home">REGISTER</h1>
+        <section>
+            <form action="confirmation.html" method="get" >
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Full Name: *
+                        <input type="text" id="full-name" name="full-name" autocomplete="on" required>
+                    </label>
+                    <label for="org-title"> Organizational Title: 
+                        <input type="text" id="org-title" name="org-title" autocomplete="organization"  pattern="^[A-Za-z\- ]{7,}$" >
+                    </label>
+                    <label for="date-of-birth"> Birth Date:* 
+                        <input type="date" id="date-of-birth" name="date-of-birth" autocomplete="on" required>
+                    </label>
+                    <label for="cpf">CPF:* 
+                        <input type="text" id="cpf" name="cpf" autocomplete="on" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Organizational Information</legend>
+                    <label for="org-name">Organizational Name:*
+                        <input type="text" id="org-name" name="org-name" autocomplete="organization" required>
+                    </label>
+                    <label for="cpnj">CPNJ:*
+                        <input type="text" id="cpnj" name="cpnj" autocomplete="on" required>
+                    </label>
+   
+                    <label for="Service">Service Type:*
+                        <input type="text" id="Service" name="Service" autocomplete="on" required>
+                    </label>
+
+                    <label for="store-lane">Preferred Store Lane:*</label>
+                    <div class="checkbox-group">
+                        <div>
+                            <input type="radio" id="lane-a" name="store-lane" value="A">
+                            <label for="lane-a">Lane A</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="lane-b" name="store-lane" value="B">
+                            <label for="lane-b">Lane B</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="lane-c" name="store-lane" value="C">
+                            <label for="lane-c">Lane C</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="any-lane" name="store-lane" value="any-lane">
+                            <label for="lane-c">Any lane</label>
+                        </div>
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="email">Email:*
+                        <input type="email" id="email" name="email"  placeholder="occdmobiles@gmail.com" autocomplete="on" required>
+                    </label>
+                    <label for="phone">Phone:*
+                        <input type="tel" id="phone" name="phone" autocomplete="on" required>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Register" id="register">
+            </form>
+
+        </section>
+
+        <section class="weather">
+            <h3>Current Weather in Brasilia</h3>
+            <img id="weather-icon" src="" alt="current-weather-icon">
+            <div id="current-weather-info" class="current-weather-info"></div>
+        </section>
+    </main>
+    
+    
+
+    <footer>
+        <div class="footer-cont card1">
+            <h4>Brasilian Import Market</h4>
+            <p>Address: SIA Trecho 7 - Guará, Brasília - DF, 71200-100</p>
+            <p>Phone: (61) 3321-1111</p>
+            <p>Email: info@bim.com.br"<p>
+        </div>
+        <div class="footer-cont card2">
+            <P>WDD231 Final Project</P>
+            <p>Sampson Chinedu Ngobi</p>
+            <p>&copy; <span id="year"></span> Brasilia, Brazil</p>
+            <p id="lastModified">Last Modified: <span id="modified-date"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

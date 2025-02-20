@@ -1,0 +1,194 @@
+{
+  "stores": [
+    {
+      "title": "Tech Haven",
+      "shopNumber": "A1",
+      "type": "Computer Sales",
+      "image": "images/tech_haven.jpg",
+      "contact": {
+        "phone": "+1234567890",
+        "email": "techhaven@example.com"
+      }
+    },
+    {
+      "title": "Mobile Masters",
+      "shopNumber": "A2",
+      "type": "Phone Sales",
+      "image": "images/mobile_masters.jpg",
+      "contact": {
+        "phone": "+0987654321",
+        "email": "mobilemasters@example.com"
+      }
+    },
+    {
+      "title": "PC Repair Hub",
+      "shopNumber": "A3",
+      "type": "Computer Repair",
+      "image": "images/pc_repair_hub.jpg",
+      "contact": {
+        "phone": "+1122334455",
+        "email": "pcrepair@example.com"
+      }
+    },
+    {
+      "title": "Fix My Phone",
+      "shopNumber": "A4",
+      "type": "Phone Repair",
+      "image": "images/fix_my_phone.jpg",
+      "contact": {
+        "phone": "+2233445566",
+        "email": "fixmyphone@example.com"
+      }
+    },
+    {
+      "title": "Fashion World",
+      "shopNumber": "A5",
+      "type": "Clothes",
+      "image": "images/fashion_world.jpg",
+      "contact": {
+        "phone": "+3344556677",
+        "email": "fashionworld@example.com"
+      }
+    },
+    {
+      "title": "Gadget Galaxy",
+      "shopNumber": "A6",
+      "type": "Electronics",
+      "image": "images/gadget_galaxy.jpg",
+      "contact": {
+        "phone": "+4455667788",
+        "email": "gadgetgalaxy@example.com"
+      }
+    },
+    {
+      "title": "Elite Watches",
+      "shopNumber": "A7",
+      "type": "Watches",
+      "image": "images/elite_watches.jpg",
+      "contact": {
+        "phone": "+5566778899",
+        "email": "elitewatches@example.com"
+      }
+    },
+    {
+      "title": "Smart Accessories",
+      "shopNumber": "A8",
+      "type": "Phone Accessories",
+      "image": "images/smart_accessories.jpg",
+      "contact": {
+        "phone": "+6677889900",
+        "email": "smartaccessories@example.com"
+      }
+    },
+    {
+      "title": "Sneaker Spot",
+      "shopNumber": "A9",
+      "type": "Shoes",
+      "image": "images/sneaker_spot.jpg",
+      "contact": {
+        "phone": "+7788990011",
+        "email": "sneakerspot@example.com"
+      }
+    },
+    {
+      "title": "Gaming Zone",
+      "shopNumber": "A10",
+      "type": "Gaming Consoles",
+      "image": "images/gaming_zone.jpg",
+      "contact": {
+        "phone": "+8899001122",
+        "email": "gamingzone@example.com"
+      }
+    },
+    {
+      "title": "Luxury Bags",
+      "shopNumber": "B1",
+      "type": "Bags",
+      "image": "images/luxury_bags.jpg",
+      "contact": {
+        "phone": "+9900112233",
+        "email": "luxurybags@example.com"
+      }
+    },
+    {
+      "title": "Music Store",
+      "shopNumber": "B2",
+      "type": "Musical Instruments",
+      "image": "images/music_store.jpg",
+      "contact": {
+        "phone": "+1122334455",
+        "email": "musicstore@example.com"
+      }
+    },
+    {
+      "title": "Book Haven",
+      "shopNumber": "B3",
+      "type": "Books",
+      "image": "images/book_haven.jpg",
+      "contact": {
+        "phone": "+2233445566",
+        "email": "bookhaven@example.com"
+      }
+    },
+    {
+      "title": "Sports Gear",
+      "shopNumber": "B4",
+      "type": "Sports Equipment",
+      "image": "images/sports_gear.jpg",
+      "contact": {
+        "phone": "+3344556677",
+        "email": "sportsgear@example.com"
+      }
+    },
+    {
+      "title": "Toy Universe",
+      "shopNumber": "B5",
+      "type": "Toys",
+      "image": "images/toy_universe.jpg",
+      "contact": {
+        "phone": "+4455667788",
+        "email": "toyuni@example.com"
+      }
+    },
+    {
+      "title": "Pet Paradise",
+      "shopNumber": "C1",
+      "type": "Pet Supplies",
+      "image": "images/pet_paradise.jpg",
+      "contact": {
+        "phone": "+5566778899",
+        "email": "petparadise@example.com"
+      }
+    },
+    {
+      "title": "Jewelry World",
+      "shopNumber": "C2",
+      "type": "Jewelry",
+      "image": "images/jewelry_world.jpg",
+      "contact": {
+        "phone": "+6677889900",
+        "email": "jewelryworld@example.com"
+      }
+    },
+    {
+      "title": "Organic Market",
+      "shopNumber": "C3",
+      "type": "Organic Food",
+      "image": "images/organic_market.jpg",
+      "contact": {
+        "phone": "+7788990011",
+        "email": "organicmarket@example.com"
+      }
+    },
+    {
+      "title": "Handmade Crafts",
+      "shopNumber": "C4",
+      "type": "Handicrafts",
+      "image": "images/handmade_crafts.jpg",
+      "contact": {
+        "phone": "+8899001122",
+        "email": "handmadecrafts@example.com"
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+:root{
+    --primary-color: #DB504A;
+    --secondary-color: #B2B09B;
+    --button-backgroun-color: #DB504A;
+    --button-color: black;
+    --font-color1:black;
+    --font-color2:white;
+}
+
+/* form styling  */
+
+form fieldset{
+    margin: 2rem 0;
+    border: 2px solid var(--font-color1);
+    border-radius: 4px;
+    padding: 1rem 2%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form legend{
+   font-style: italic;
+   color: var(--font-color1);
+   font-weight: bold;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1rem;
+    color: var(--primary-color);
+
+}
+
+form input[type = "text"],
+          [type = "tel"],
+          [type = "number"],
+          [type = "email"]
+{
+    background-color: var(--secondery-color);
+    color: black;
+    display: block;
+    width: 90%;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    appearance: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="number"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 55, 100, 0.5);
+    outline: none;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.9rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-image 0.3s ease-in-out, transform 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-image: linear-gradient(#6f200e, #9c2c13);
+    transform: scale(1.02);
+}
+
+
+    

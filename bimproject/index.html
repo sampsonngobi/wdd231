@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content ="This page is a site plan page for my wdd231 final course project">
+    <meta name="author" content="Sampson Chinedu Ngobi">
+   
+
+    <!-- open graph tags -->
+    <meta property="og:title" content="Home page for the Brasilia Import Market website">
+    <meta property="og:description" content="This page is home page for the Brasilia import market which is part of wdd231 final course project.">
+    <meta property="og:url" content="https://sampsonngobi.github.io/wdd231/bimproject/index.html"> 
+    <meta property="og:type" content="website">
+
+    <!-- style sheets -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/general-style.css">
+     <link rel="stylesheet" href="styles/home.css">
+    
+
+    <script type="module" src="scripts/home.js"></script>
+     
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico"> 
+
+
+    <title>Home page for the Brasilia Import Market website</title>
+</head>
+<body>
+    <header>
+        <div class="header-cont">
+            <img src="images/logo.png" alt="BIM logo " class="logo"> 
+            <h1>BRASILIA IMPORT MARKET</h1>
+            <button id="menu" aria-label="Toggle menu"></button>
+        </div>
+        <div>
+            <nav class="navigation">
+                <ul class="list">
+                    <ul class="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="stores.html">Stores</a></li>
+                        <li><a href="register.html" target="_blank">Register</a></li>
+                        <li><a href="about.html" target="_blank">About</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="home">HOME</h1>
+        <img class="hero-image" src="images/hero-image.webp" alt="image of Brasilian import market">
+
+        <section>
+            <div class="advert" id="advert"></div>
+            <div class="weather">
+                <h3>Current Weather in Brasilia</h3>
+                <img id="weather-icon" src="" alt="current-weather-icon">
+                <div id="current-weather-info" class="current-weather-info"></div>
+            </div>
+        </section>
+        
+    </main>
+    
+    
+
+    <footer>
+        <div class="footer-cont card1">
+            <h4>Brasilian Import Market</h4>
+            <p>Address: SIA Trecho 7 - Guará, Brasília - DF, 71200-100</p>
+            <p>Phone: (61) 3321-1111</p>
+            <p>Email: info@bim.com.br"<p>
+        </div>
+        <div class="footer-cont card2">
+            <P>WDD231 Final Project</P>
+            <p>Sampson Chinedu Ngobi</p>
+            <p>&copy; <span id="year"></span> Brasilia, Brazil</p>
+            <p id="lastModified">Last Modified: <span id="modified-date"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
