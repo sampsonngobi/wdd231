@@ -50,12 +50,12 @@ const displayStores = (stores) => {
         modalTitle.innerText = store.title;
         modalText.innerText = `Service Type: ${store.type}`;
         phone.innerText = `Phone: ${store.contact.phone}`
-        email.innerText = `Phone: ${store.contact.email}`
-        storeNumber.innerText = `Phone: ${store.storeNumber}`
+        email.innerText = `email: ${store.contact.email}`
+        storeNumber.innerText = `shop Number: ${store.shopNumber}`
         closeDialog.innerText = 'Close';
 
         // Append Elements to Modal
-        modal.append(modalLogo, modalTitle, modalText, closeDialog, phone, email, storeNumber);
+        modal.append(modalLogo, modalTitle, modalText, phone, email, storeNumber, closeDialog);
        
 
         // Append Elements to Store Card

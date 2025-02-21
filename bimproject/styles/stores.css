@@ -53,9 +53,25 @@
 
 
 
-dialog {
-    background-color: #DB504A;
+dialog.open {
+    background-color:var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+
+dialog::backdrop{
+    background-color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+dialog img{
+    border-radius: 60px;
+}
+
+
  
 
 @media (min-width: 614px) {
