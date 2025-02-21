@@ -1,0 +1,88 @@
+:root{
+    --primary-color: #DB504A;
+    --secondary-color: #B2B09B;
+    --button-backgroun-color: #DB504A;
+    --button-color: black;
+    --font-color1:black;
+    --font-color2:white;
+}
+
+
+.stores div{
+    background-color: #B2B09B;
+    justify-items: ;
+    padding: 1rem;
+    margin: 1rem 0; 
+    display: grid;
+    grid-template-areas: 
+    "a b b"
+    "c c c"
+    ;   
+}
+
+
+.stores div img {
+    grid-area: a;
+    border-radius: 50px;
+
+}
+
+.stores div h3 {
+    grid-area: b;
+    margin-top: 3rem;
+
+}
+.stores div p {
+    grid-area: c;
+    text-align: center;
+
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* Estilo para o conteúdo do modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Estilo para o botão de fechar */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+@media (min-width: 614px) {
+
+    .stores{
+       display:grid;
+       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) ;
+       grid-gap: 5px;
+    }
+    
+}
