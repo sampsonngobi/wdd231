@@ -11,6 +11,5 @@ import { getStores  } from './store-data.js'
 toggleMenu()
 updateFooter()
 apiFetch()
-getAdvert()
 getStores()
 
